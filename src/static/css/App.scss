@@ -1,0 +1,196 @@
+$primary-color:#22d099;
+$dark-gray: #5a5a59;
+$medium-gray: #958c81;
+$light-gray: #dcdcdc;
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
+header {
+  width: 100%;
+  border-top: 0.6rem solid black;
+  border-bottom: 1px solid $light-gray;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      margin: 0;
+      font-weight: 200;
+      margin-top: 0;
+
+      a {
+        text-decoration: none;
+        color: $medium-gray;
+
+        &:active {
+          color: $medium-gray;
+        }
+      }
+
+      span {
+        font-weight: 600;
+        color: $primary-color;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+
+          &:not(:first-child) {
+            margin-left: 1rem;
+          }
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+          }
+
+          .active {
+            color: rgb(42, 109, 42);
+          }
+        }
+
+        .loginBtn {
+            background-color: black;
+            color: white;
+            padding: 0.2rem 0.5rem;
+
+            &:hover {
+              background-color: $primary-color;
+            }
+        }
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+/** HOME **/
+.home-wrapper {
+  width: 70%;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.main-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.pymeForm-wrapper {
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 3rem;
+      font-size: 1.6rem;
+      color: $primary-color;
+      margin-bottom: 0.3rem;
+      padding-left: 0.5rem;
+      border: 0;
+      outline: 0;
+      box-shadow: 0 0.4rem 0.5rem rgba(0,0,0,.2);
+
+      &::placeholder {
+        color: $primary-color;
+        opacity: 1;
+      }
+    }
+
+    .activitiesList {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      max-height: 15rem;
+      overflow-y: auto;
+      box-shadow: 0 0.4rem 0.5rem rgba(0,0,0,.2);
+
+      li {
+        line-height: 2rem;
+        cursor: pointer;
+        padding-left: 1rem;
+        border-bottom: 1px solid #EEE;
+        
+        &:hover {
+          background-color: $light-gray;
+        }
+      }
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      width: 30%;
+      font-size: 1.2rem;
+      height: 3rem;
+      border: 0;
+      cursor: pointer;
+      margin: 0 auto;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.errorFormMsg {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    width: 30%;
+
+    img {
+      object-fit: contain;
+    }
+
+    p {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      color: $dark-gray;
+    }
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-logo {
+  width: 12rem;
+}
+
+.underConstruction-wrapper {
+  display: flex;
+  img {
+    margin: 0 auto;
+  }
+}
